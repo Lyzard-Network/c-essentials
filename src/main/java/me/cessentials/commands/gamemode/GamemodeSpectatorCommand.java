@@ -57,11 +57,7 @@ public class GamemodeSpectatorCommand extends AbstractCommand {
             sender.sendMessage(MessagesUtils.getMessage("gamemode-sender-success", instance)
                     .replace("<player>", target.getName())
                     .replace("<gamemode>", GameMode.SPECTATOR.toString()));
-
-            return;
         }
-
-        sender.sendMessage(MessagesUtils.getMessage("gamemode-spectator-usage", instance));
 
     }
 }

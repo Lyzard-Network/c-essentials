@@ -1,4 +1,24 @@
 name: cEssentials
-version: '${project.version}'
+version: '1.0'
 main: me.cessentials.CEssentials
 api-version: 1.19
+
+commands:
+  gmc:
+    description: Gamemode Creative Command
+    usage: /gmc
+  gms:
+    description: Gamemode Survival Command
+    usage: /gms
+  gma:
+    description: Gamemode Adventure Command
+    usage: /gma
+  gmsp:
+    description: Gamemode Spectator Command
+    usage: /gmsp
+  fly:
+    description: Fly command
+    usage: /fly
+    aliases:
+      - flight
+      - vola

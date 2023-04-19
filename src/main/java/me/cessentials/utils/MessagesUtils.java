@@ -26,6 +26,10 @@ public class MessagesUtils {
         return getColor(instance.getMessagesConfiguration().getString(path));
     }
 
+    public static List<String> getMessages(String path, CEssentials instance) {
+        return getColor(instance.getMessagesConfiguration().getStringList(path));
+    }
+
     public static String getMessageFromConfig(String path, CEssentials instance) {
         return  getColor(instance.getConfiguration().getString(path));
     }

@@ -1,12 +1,19 @@
 not-enough-permissions: "&cNon hai i permessi per eseguire questo comando."
 player-not-online: "&cQuel giocatore non è online."
 
-gamemode-creative-usage: "&7Utilizza &6- &e/gmc <player>"
-gamemode-survival-usage: "&7Utilizza &6- &e/gms <player>"
-gamemode-spectator-usage: "&7Utilizza &6- &e/gmsp <player>"
-gamemode-adventure-usage: "&7Utilizza &6- &e/gma <player>"
-
 gamemode-success: "&7La tua gamemode è stata impostata a &e<gamemode>."
 gamemode-sender-success: "&7Hai impostato la gamemode di &e<player> &7a &e<gamemode>"
+
+flight-enabled-self: "&7Hai abilitato la fly."
+flight-enabled-target: "&7Ti è stata abilitata la fly."
+flight-enabled-to: "&7Hai abilitato la fly di &e<player>"
+flight-disabled-self: "&7Hai disabilitato la fly."
+flight-disabled-target: "&7Ti è stata disabilitato la fly."
+flight-disabled-to: "&7Hai disabilitato la fly di &e<player>"
+
+welcome-message:
+  - " "
+  - "&eBenvenuto nel &fVanilla &edi &6Lyzard&e. &7#<index>"
+  - " "
 
 

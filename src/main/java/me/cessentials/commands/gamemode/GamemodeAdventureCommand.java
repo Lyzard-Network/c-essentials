@@ -57,11 +57,7 @@ public class GamemodeAdventureCommand extends AbstractCommand {
             sender.sendMessage(MessagesUtils.getMessage("gamemode-sender-success", instance)
                     .replace("<player>", target.getName())
                     .replace("<gamemode>", GameMode.ADVENTURE.toString()));
-
-            return;
         }
-
-        sender.sendMessage(MessagesUtils.getMessage("gamemode-survival-usage", instance));
 
     }
 }
