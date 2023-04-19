@@ -1,7 +1,7 @@
 package me.cessentials.listeners;
 
 import me.cessentials.CEssentials;
-import me.cessentials.data.PlayerData;
+import me.cessentials.data.beans.PlayerData;
 import me.cessentials.utils.MessagesUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

@@ -11,6 +11,13 @@ flight-disabled-self: "&7Hai disabilitato la fly."
 flight-disabled-target: "&7Ti è stata disabilitato la fly."
 flight-disabled-to: "&7Hai disabilitato la fly di &e<player>"
 
+teleport-wrong-usage: "&7Utilizza &e/tp <player> &7per tipparti da un player, &e/tp <x> <y> <z> &7per tipparti a coordinate specifiche"
+teleport-position-usage: "&7Utilizza: &e/tp <x> <y> <z>"
+teleport-success: "&7Sei stato teletrasportato da &e<player>"
+
+teleport-here-usage: "&7Utilizza: &e/tphere <player>"
+teleport-here-target: "&7Sei stato teletrasportato da &e<player>"
+teleport-here-self: "&7Hai teletrasportato &e<player> &7da te."
 welcome-message:
   - " "
   - "&eBenvenuto nel &fVanilla &edi &6Lyzard&e. &7#<index>"

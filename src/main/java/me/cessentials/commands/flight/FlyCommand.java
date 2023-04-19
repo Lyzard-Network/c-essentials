@@ -2,7 +2,7 @@ package me.cessentials.commands.flight;
 
 import me.cessentials.CEssentials;
 import me.cessentials.commands.AbstractCommand;
-import me.cessentials.data.PlayerData;
+import me.cessentials.data.beans.PlayerData;
 import me.cessentials.utils.MessagesUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;

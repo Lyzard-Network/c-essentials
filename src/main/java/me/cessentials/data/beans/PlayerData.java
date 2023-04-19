@@ -1,7 +1,7 @@
-package me.cessentials.data;
+package me.cessentials.data.beans;
 
-import org.bukkit.entity.Player;
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class PlayerData {
@@ -9,11 +9,13 @@ public class PlayerData {
     private int kills;
     private int deaths;
     private boolean flight;
+    private List<PlayerHome> playerHomeList;
 
     public PlayerData(UUID uuid) {
         kills = 0;
         deaths = 0;
         flight = false;
+        playerHomeList = new ArrayList<>();
     }
 
     public UUID getUuid() {
@@ -22,6 +24,14 @@ public class PlayerData {
 
     public void setUuid(UUID uuid) {
         this.uuid = uuid;
+    }
+
+    public List<PlayerHome> getPlayerHomeList() {
+        return playerHomeList;
+    }
+
+    public void setPlayerHomeList(List<PlayerHome> playerHomeList) {
+        this.playerHomeList = playerHomeList;
     }
 
     public int getKills() {

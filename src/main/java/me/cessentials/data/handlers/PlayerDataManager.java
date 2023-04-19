@@ -1,6 +1,7 @@
-package me.cessentials.data;
+package me.cessentials.data.handlers;
 
 import me.cessentials.CEssentials;
+import me.cessentials.data.beans.PlayerData;
 import org.bukkit.entity.Player;
 
 import java.util.List;
@@ -46,4 +47,5 @@ public class PlayerDataManager {
     public void addUser(PlayerData playerData) {
         playerDataList.add(playerData);
     }
+
 }

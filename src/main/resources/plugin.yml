@@ -22,3 +22,15 @@ commands:
     aliases:
       - flight
       - vola
+  tp:
+    description: Tp Command
+    usage: /tp
+    aliases:
+      - teleport
+
+  tphere:
+    description: Tphere Command
+    usage: /tphere
+    aliases:
+      - s
+      - teleporthere
