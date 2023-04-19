@@ -1,0 +1,5 @@
+gamemode-creative-usage: "&7Utilizza &6- &e/gmc <player>"
+gamemode-survival-usage: "&7Utilizza &6- &e/gms <player>"
+gamemode-spectator-usage: "&7Utilizza &6- &e/gmsp <player>"
+gamemode-adventure-usage: "&7Utilizza &6- &e/gma <player>"
+

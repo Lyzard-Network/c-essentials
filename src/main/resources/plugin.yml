@@ -1,0 +1,4 @@
+name: cEssentials
+version: '${project.version}'
+main: me.cessentials.CEssentials
+api-version: 1.19
