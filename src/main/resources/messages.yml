@@ -18,6 +18,31 @@ teleport-success: "&7Sei stato teletrasportato da &e<player>"
 teleport-here-usage: "&7Utilizza: &e/tphere <player>"
 teleport-here-target: "&7Sei stato teletrasportato da &e<player>"
 teleport-here-self: "&7Hai teletrasportato &e<player> &7da te."
+
+sethome-usage: "&7Utilizza - &e/sethome <nomehome>"
+sethome-already-set: "&cHai già impostato una home con quel nome."
+sethome-has-been-set: "&aHai impostato una home nella tua posizione corrente."
+sethome-limit-reached: "&cHai raggiunto il limite massimo di homes settate per il tuo rank."
+sethome-success: "&aHai impostato la home correttamente alla tua posizione attuale."
+
+delhome-usage: "&7Utilizza - &e/delhome <nomehome>"
+delhome-nohome-with-such-name: "&cNon hai impostato nessuna home con quel nome"
+delhome-success: "&aHai eliminato quella home correttamente."
+delhome-no-homes: "&cNon hai impostato nessuna home"
+
+home-usage: "&7Utilizza - &e/home <nomehome>"
+home-nohome-with-such-name: "&cNon hai impostato nessuna home."
+
+homes-homeless: "&cNon hai impostato nessuna home"
+homes-prefix: "&7Le tue homes: "
+homes-home-color: "&e"
+homes-separator-color: "&6"
+
+teleport-started: "&6Il teletrasporto è iniziato, non muoverti per &e<seconds>"
+teleport-cancelled: "&cTi sei mosso, il teletrasporto è stato cancellato."
+teleport-in-progress: "&6Teletrasporto in &e<seconds>&6..."
+
+
 welcome-message:
   - " "
   - "&eBenvenuto nel &fVanilla &edi &6Lyzard&e. &7#<index>"

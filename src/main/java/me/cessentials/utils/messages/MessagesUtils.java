@@ -1,4 +1,4 @@
-package me.cessentials.utils;
+package me.cessentials.utils.messages;
 
 import me.cessentials.CEssentials;
 import org.bukkit.ChatColor;

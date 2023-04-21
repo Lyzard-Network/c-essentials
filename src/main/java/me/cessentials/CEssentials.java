@@ -5,8 +5,14 @@ import me.cessentials.commands.gamemode.GamemodeAdventureCommand;
 import me.cessentials.commands.gamemode.GamemodeCreativeCommand;
 import me.cessentials.commands.gamemode.GamemodeSpectatorCommand;
 import me.cessentials.commands.gamemode.GamemodeSurvivalCommand;
+import me.cessentials.commands.home.DelHomeCommand;
+import me.cessentials.commands.home.HomeCommand;
+import me.cessentials.commands.home.HomesCommand;
+import me.cessentials.commands.home.SetHomeCommand;
+import me.cessentials.commands.teleport.TeleportCommand;
 import me.cessentials.data.beans.PlayerData;
 import me.cessentials.data.handlers.PlayerDataManager;
+import me.cessentials.listeners.JoinEvent;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -48,8 +54,9 @@ public final class CEssentials extends JavaPlugin {
         playerDataManager = new PlayerDataManager(playerDataList, instance);
 
 
-        getLogger().info("Registering Commands...");
+        getLogger().info("Registering Commands and Listeners...");
         registerCommands();
+        registerEvents();
 
 
 
@@ -76,12 +83,23 @@ public final class CEssentials extends JavaPlugin {
         messagesConfiguration = YamlConfiguration.loadConfiguration(messagesFile);
     }
 
+    public void registerEvents() {
+        instance.getServer().getPluginManager().registerEvents(new JoinEvent(instance), this);
+    }
+
     public void registerCommands() {
         new GamemodeAdventureCommand(instance);
         new GamemodeCreativeCommand(instance);
         new GamemodeSurvivalCommand(instance);
         new GamemodeSpectatorCommand(instance);
         new FlyCommand(instance);
+        new DelHomeCommand(instance);
+        new SetHomeCommand(instance);
+        new HomeCommand(instance);
+        new HomesCommand(instance);
+        new TeleportCommand(instance);
+        new TeleportCommand(instance);
+
     }
 
     public FileConfiguration getConfiguration() {

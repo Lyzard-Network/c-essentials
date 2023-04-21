@@ -3,7 +3,7 @@ package me.cessentials.commands.teleport;
 import io.papermc.lib.PaperLib;
 import me.cessentials.CEssentials;
 import me.cessentials.commands.AbstractCommand;
-import me.cessentials.utils.MessagesUtils;
+import me.cessentials.utils.messages.MessagesUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

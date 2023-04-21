@@ -12,6 +12,7 @@ public class PlayerData {
     private List<PlayerHome> playerHomeList;
 
     public PlayerData(UUID uuid) {
+        this.uuid = uuid;
         kills = 0;
         deaths = 0;
         flight = false;

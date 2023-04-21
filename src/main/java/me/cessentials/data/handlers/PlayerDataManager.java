@@ -2,6 +2,10 @@ package me.cessentials.data.handlers;
 
 import me.cessentials.CEssentials;
 import me.cessentials.data.beans.PlayerData;
+import me.cessentials.data.beans.PlayerHome;
+import me.cessentials.utils.homes.HomeUtils;
+import me.cessentials.utils.messages.MessagesUtils;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import java.util.List;
@@ -48,4 +52,31 @@ public class PlayerDataManager {
         playerDataList.add(playerData);
     }
 
+
+    public void addHomeToUser(Player player, String homeName) {
+        PlayerData playerData = getPlayerData(player);
+
+        if(HomeUtils.hasHome(playerData, homeName)) {
+            player.sendMessage(MessagesUtils.getMessage("home-already-set", instance));
+            return;
+        }
+
+        PlayerHome newHome = new PlayerHome(homeName, player.getLocation());
+        playerData.getPlayerHomeList().add(newHome);
+
+        player.sendMessage(MessagesUtils.getMessage("sethome-success", instance));
+    }
+
+    public void removeHomeFromUser(Player player, String homeName) {
+        PlayerData playerData = getPlayerData(player);
+
+        if(!HomeUtils.hasHome(playerData, homeName)) {
+            player.sendMessage(MessagesUtils.getMessage("delhome-nohome-with-such-name", instance));
+            return;
+        }
+
+        playerData.getPlayerHomeList().remove(HomeUtils.getHomeFromName(playerData, homeName));
+
+        player.sendMessage(MessagesUtils.getMessage("delhome-success", instance));
+    }
 }

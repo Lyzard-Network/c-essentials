@@ -2,7 +2,7 @@ package me.cessentials.commands.gamemode;
 
 import me.cessentials.CEssentials;
 import me.cessentials.commands.AbstractCommand;
-import me.cessentials.utils.MessagesUtils;
+import me.cessentials.utils.messages.MessagesUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.command.CommandSender;

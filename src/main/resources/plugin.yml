@@ -22,12 +22,31 @@ commands:
     aliases:
       - flight
       - vola
+  home:
+    description: Home command
+    usage: /home
+    aliases:
+      - casa
+  sethome:
+    description: Sethome Command
+    usage: /sethome
+    aliases:
+      - setcasa
+  delhome:
+    description: DelHome command
+    usage: /delhome
+    aliases:
+      - /eliminahome
+  homes:
+    description: Homes command
+    usage: /homes
+    aliases:
+      - case
   tp:
     description: Tp Command
     usage: /tp
     aliases:
       - teleport
-
   tphere:
     description: Tphere Command
     usage: /tphere
