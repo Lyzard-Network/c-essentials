@@ -32,12 +32,17 @@ public class SetHomeCommand extends AbstractCommand {
 
         //controlla se il player ha specificato il nome della home da settare
         if(args.length == 0) {
-            instance.getPlayerDataManager().addHomeToUser(player, "home");
+            if(!HomeUtils.doesPlayerHaveAnyHomes(playerData)) {
+                instance.getPlayerDataManager().addHomeToUser(player, "home");
+                return;
+            }
+
+            player.sendMessage(MessagesUtils.getMessage("sethome-usage", instance));
             return;
         }
 
         if(args.length == 1) {
-            instance.getPlayerDataManager().addHomeToUser(player, args[1]);
+            instance.getPlayerDataManager().addHomeToUser(player, args[0]);
             return;
         }
 

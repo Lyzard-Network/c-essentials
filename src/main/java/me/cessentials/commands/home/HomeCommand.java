@@ -95,17 +95,41 @@ public class HomeCommand extends AbstractCommand {
                 //check if the player moved
                 if(Bukkit.getPlayer(player.getName()).getLocation().getBlockZ() != z || Bukkit.getPlayer(player.getName()).getLocation().getBlockY() != y || Bukkit.getPlayer(player.getName()).getLocation().getBlockX() != x) {
                     player.sendMessage(MessagesUtils.getMessage("teleport-cancelled", instance));
+
+                    player.sendTitle(
+                            MessagesUtils.getMessage("teleport-title-cancelled", instance),
+                            MessagesUtils.getMessage("teleport-subtitle-cancelled", instance)
+                    );
+
                     player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_NO, 1,1);
                     cancel();
                 } else {
 
                     if (cooldown == 0) {
+
+                        player.sendTitle(
+                                MessagesUtils.getMessage("teleport-title-success", instance),
+                                MessagesUtils.getMessage("teleport-subtitle-success", instance)
+                        );
+
+                        player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+
                         PaperLib.teleportAsync(player, homeLocation);
                         cancel();
                     } else {
                         player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_PLING, 1, 1);
-                        player.sendMessage(MessagesUtils.getMessage("teleport-in-progress", instance)
-                                .replace("<seconds>", String.valueOf(cooldown)));
+
+                        player.sendMessage(
+                                MessagesUtils.getMessage("teleport-in-progress", instance)
+                                    .replace("<seconds>", String.valueOf(cooldown))
+                        );
+
+                        player.sendTitle(
+                                MessagesUtils.getMessage("teleport-title-in-progress", instance),
+                                MessagesUtils.getMessage("teleport-subtitle-in-progress", instance)
+                                        .replace("<seconds>", String.valueOf(cooldown))
+                        );
+
                         cooldown -= 1;
                     }
                 }

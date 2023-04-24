@@ -37,11 +37,17 @@ homes-homeless: "&cNon hai impostato nessuna home"
 homes-prefix: "&7Le tue homes: "
 homes-home-color: "&e"
 homes-separator-color: "&6"
+home-already-set: "&cHai già impostato una home con quel nome."
 
 teleport-started: "&6Il teletrasporto è iniziato, non muoverti per &e<seconds>"
 teleport-cancelled: "&cTi sei mosso, il teletrasporto è stato cancellato."
 teleport-in-progress: "&6Teletrasporto in &e<seconds>&6..."
-
+teleport-title-in-progress: "&6&lTeletrasporto..."
+teleport-subtitle-in-progress: "&7<seconds>"
+teleport-title-cancelled: "&cTeletrasporto cancellato."
+teleport-subtitle-cancelled: "&7Ti sei mosso..."
+teleport-title-success: "&a&lTeletrasporto completato."
+teleport-subtitle-success: ""
 
 welcome-message:
   - " "
