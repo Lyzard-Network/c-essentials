@@ -21,6 +21,21 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * TODO Tpa command - Send a teleport request to a player
+ * TODO Tpahere command - Send a teleport to you request to a player
+ * TODO spawn - Teleport to spawn
+ * TODO setspawn - set global spawn point
+ *
+ * TODO msg command - Send a private message to a player
+ * TODO ignore command - Ignore private messages of a player
+ * TODO toggleprivatemessages - Disable/enable private messages
+ * TODO sounds - Disable/enable private messages sounds
+ *
+ * */
+
+
 public final class CEssentials extends JavaPlugin {
 
     private CEssentials instance;

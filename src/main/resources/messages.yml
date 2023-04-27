@@ -49,6 +49,17 @@ teleport-subtitle-cancelled: "&7Ti sei mosso..."
 teleport-title-success: "&a&lTeletrasporto completato."
 teleport-subtitle-success: ""
 
+heal-usage: "&7Utilizza - &e/heal <player>"
+heal-self-success: "&aHai ripristinato al massimo la tua vita."
+heal-success-others: "&aLa tua vita è stata ripristinata al massimo."
+heal-success-self-others: "&aHai ripristinato la vita di &f<player> &aal massimo."
+
+feed-usage: "&7Utilizza - &e/feed <player>"
+feed-self-success: "&aHai ripristinato al massimo la tua fame."
+feed-success-others: "&aLa tua fame è stata ripristinata al massimo."
+feed-success-self-others: "&aHai ripristinato la fame di &f<player> &aal massimo."
+
+
 welcome-message:
   - " "
   - "&eBenvenuto nel &fVanilla &edi &6Lyzard&e. &7#<index>"

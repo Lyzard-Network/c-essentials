@@ -1,3 +1,4 @@
 welcome-message-enabled: true
 teleport-time-enabled: true
 teleport-time: 5
+spawn-location: world;x;y;z;pitch;yaw
